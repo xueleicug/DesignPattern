@@ -2,9 +2,9 @@ package example.pattern.decorator;
 /**
  *
  * @author xuelei xueleicug@163.com
- * @time   2015��1��14�� ����7:28:03
+ * @time   2015年1月14日 下午7:28:03
  **/
-public abstract class People
+public interface People
 {
 	/**
 	 * 显示装饰

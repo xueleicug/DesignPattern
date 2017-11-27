@@ -8,18 +8,10 @@ public class DecoratorTest {
     @Test
     public void testDecorator() {
 
-        Police police = new Police();
-        Pistol pistol = new Pistol();
-        Uniform uniform = new Uniform();
-        pistol.setComponent(police);
-        uniform.setComponent(pistol);
-        uniform.show();
-        System.out.println();
-        Teacher teacher = new Teacher();
-        Book book = new Book();
-        Glass glass = new Glass();
-        book.setComponent(teacher);
-        glass.setComponent(book);
-        glass.show();
+        People people = new Adult();
+        People police = new PoliceDecorator(people);
+        police.show();
+        People teacher = new TeacherDecorater(people);
+        teacher.show();
     }
 }

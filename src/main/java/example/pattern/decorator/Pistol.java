@@ -2,9 +2,9 @@ package example.pattern.decorator;
 /**
  *
  * @author xuelei xueleicug@163.com
- * @time   2015��1��14�� ����7:39:23
+ * @time   2015年1月14日 下午7:39:23
  **/
-public class Pistol extends Decorator
+public class Pistol implements Decorator
 {
 
 	public Pistol()
@@ -13,10 +13,7 @@ public class Pistol extends Decorator
 	}
 
 	@Override
-	public void show()
-	{
-		// TODO Auto-generated method stub
-		super.show();
-		System.out.println("with a pistol");
+	public void display() {
+		System.out.println("A Pistol");
 	}
 }

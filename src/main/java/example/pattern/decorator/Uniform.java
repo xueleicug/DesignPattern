@@ -2,21 +2,17 @@ package example.pattern.decorator;
 /**
  *
  * @author xuelei xueleicug@163.com
- * @time   2015��1��14�� ����7:40:46
+ * @time   2015年1月14日 下午7:40:46
  **/
-public class Uniform extends Decorator
+public class Uniform implements Decorator
 {
 
-	public Uniform()
-	{
+	public Uniform() {
 		// TODO Auto-generated constructor stub
 	}
 
 	@Override
-	public void show()
-	{
-		// TODO Auto-generated method stub
-		super.show();
-		System.out.println("wearing an uniform");
+	public void display() {
+		System.out.println("An Uniform");
 	}
 }
