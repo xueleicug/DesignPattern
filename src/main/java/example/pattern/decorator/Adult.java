@@ -2,12 +2,12 @@ package example.pattern.decorator;
 /**
  *
  * @author xuelei xueleicug@163.com
- * @time   2015��1��14�� ����7:29:35
+ * @time   2015年1月14日 下午7:29:35
  **/
-public class Police extends People
+public class Adult implements People
 {
 
-	public Police()
+	public Adult()
 	{
 		// TODO Auto-generated constructor stub
 	}
@@ -16,6 +16,6 @@ public class Police extends People
 	public void show()
 	{
 		// TODO Auto-generated method stub
-		System.out.println("This is a police");
+		System.out.println("This is a Adult");
 	}
 }
