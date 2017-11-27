@@ -6,31 +6,32 @@ package example.pattern.proxy;
  **/
 public class Manufacturer implements Service
 {
-    Proxy proxy = null;
-    public Manufacturer(Proxy proxy)
+    private String customerName;
+
+    public Manufacturer(String customerName)
     {
         // TODO Auto-generated constructor stub
-        this.proxy = proxy;
+        this.customerName = customerName;
     }
 
     @Override
     public void supplyProducts()
     {
         // TODO Auto-generated method stub
-        System.out.println("Manufacturer supply products for " + this.proxy.customer.getName());
+        System.out.println("Manufacturer supply products for " + this.customerName);
     }
 
     @Override
     public void repairProducts()
     {
         // TODO Auto-generated method stub
-        System.out.println("Manufacturer repair products for " + this.proxy.customer.getName());
+        System.out.println("Manufacturer repair products for " + this.customerName);
     }
 
     @Override
     public void updateProducts()
     {
         // TODO Auto-generated method stub
-        System.out.println("Manufacturer uppdate products for " + this.proxy.customer.getName());
+        System.out.println("Manufacturer uppdate products for " + this.customerName);
     }
 }

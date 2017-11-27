@@ -11,7 +11,9 @@ public class ProxyTest {
         Customer customer = new Customer("Tom");
         Proxy proxy = new Proxy(customer);
         proxy.supplyProducts();
+        System.out.println();
         proxy.repairProducts();
+        System.out.println();
         proxy.updateProducts();
     }
 }
