@@ -17,6 +17,6 @@ public class FactoryMethodTest {
 
         ShapeFactory rectangleFactory = new RectangleFactory();
         Shape rectangleShape = rectangleFactory.createShape();
-        rectangleShape.show()
+        rectangleShape.show();
     }
 }
