@@ -1,8 +1,8 @@
 package example.pattern.abstractfactory.test;
 
-import example.pattern.abstractfactory.AbstractFactory.AbstractFactory;
-import example.pattern.abstractfactory.AbstractFactory.GreenCircleFactory;
-import example.pattern.abstractfactory.AbstractFactory.RedRectangleFactory;
+import example.pattern.abstractfactory.AbstractFactory;
+import example.pattern.abstractfactory.GreenCircleFactory;
+import example.pattern.abstractfactory.RedRectangleFactory;
 import org.junit.Test;
 
 public class AbstractFactoryTest {
